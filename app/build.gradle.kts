@@ -51,6 +51,15 @@ android {
 
 dependencies {
 
+    val nav_version = "2.7.7"
+
+    // Kotlin
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-dynamic-features-fragment:$nav_version")
+    implementation("androidx.navigation:navigation-compose:$nav_version")
+    androidTestImplementation("androidx.navigation:navigation-testing:$nav_version")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
